@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    text-transform: capitalize;
+    font-family: 'Gilroy';
+}
+
+ul li a {
+    text-transform: capitalize;
+    display: block;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 3px 22px;
+}
+
+ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    color: white;
+    list-style: none;  
+    font-size: 1.6vw;
+    font-weight: 800;
+}
+.logo img {
+    width: 60%;
+    /* border: 1px solid red; */
+    border-radius: 95%;
+    background: linear-gradient(black,white,white,black);
+    padding: 4px;
+}
+
+.logo {
+    width: 9%;
+    margin-left: 25px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+.navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+}
+
+.home::before {
+    content: "";
+    background: url('bk.jpeg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+.home h1 {
+    color: white;
+    text-align: center;
+    margin: 2vw;
+}
+
+.home p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.h-primary {
+    font-size: 4vw;
+    padding: 0px;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+button {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 30px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.services {
+    margin: 25px;
+    display: flex;
+    font-family: 'Gilroy';
+}
+
+.services .box {
+    border: 2px solid red;
+    border-radius: 28px;
+    padding: 34px;
+    margin: 3px 16px;
+    background-color: #efe4d7;
+}
+
+.services .box img {
+    margin: auto;
+    display: block;
+    height: 160px;  
+}
+
+.services .box p {
+    font-size: 0.8rem;
+}
+
+.clientsection {
+    height: 344px;
+    position: relative;
+}
+
+.clientsection::before {
+    content: "";
+    position: absolute;
+    background: url('bk.jpeg')no-repeat center center/cover;
+    width: 100%;
+    height: 85%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.client {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.client img {
+    height: 125px;
+}
+
+.clientitem {
+    padding: 4.5vw 2vw;
+}
+
+.contact {
+    position: relative;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contactt.jpeg')no-repeat center center/cover;
+}
+.contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.contactbox input,
+.contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+.contactbox form{
+    width: 40%;
+}
+.contactbox label{
+    font-size: 1.3rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 12px;
+    text-transform: none;
+}
+
+@media screen and (max-width: 1024px){
+.services{
+    flex-direction: column;
+    margin: 1.5vw 15vw;
+}
+
+.client{
+    overflow: hidden;
+    flex-wrap: wrap;
+    gap: 4px 82px;
+}
+.clientsection{
+height:572px;
+}
+.home .h-primary{
+    font-size: 5.3vw;
+    font-weight: 900;
+    padding: 3vw 1vw;
+}
+.home{
+    padding: 0;
+}
+ .home p{
+    font-stretch: extra-condensed;
+    font-size:2.7vw;
+}
+button{
+    bottom: -35px;
+    position: relative;
+    margin: 50px;
+
+}
+.navbar ul li{
+    font-size: 2vw;
+    font-weight: 800;
+
+}
+.navbar .logo{
+    font-size: 52px;
+}
+
+ .logo img{
+    background: linear-gradient(black,white,white,black);
+    padding: 4px;
+}
+.services-container .h-primary{
+    padding: 0;
+}
+}
+
+
+@media screen and (max-width:767px){
+    .navbar ul li{
+        font-size: 2.5vw;
+        font-weight: 800;
+    
+    }
+    .navbar .logo{
+        font-size: 45px;
+    }
+    .home .h-primary{
+        font-size: 6.3vw;
+        font-weight: 900;
+        padding: 3vw 1vw;
+    }
+    .home{
+padding: 0;
+    }
+   .client{
+   
+    gap: 20px;
+    padding: 2px 4px;
+    }
+    .clientitem{
+        padding: 0;
+    }
+    .contactbox form{
+        width: 75vw;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .navbar ul li{
+        font-size: 2.8vw;
+        font-weight: 900;
+    
+    }
+    .navbar .logo{
+        font-size: 45px;
+    }
+    .home .h-primary{
+        font-size: 9.3vw;
+        font-weight: 900;
+        padding: 3vw 1vw;
+    }
+    .home p{
+        font-size: 5vw;
+        padding: 2vw;
+    }
+    .navbar ul li a{
+        padding: 5vw;
+    }
+    .services .box img{
+width: 50vw;
+    }
+    .contact .h-primary{
+        font-size: 8vw;
+    }
+    .contactbox form{
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .clientsection{
+        height: 760px;
+    }
+    .services-container .h-secondary{
+        font-size: 8vw;
+        text-align: center;
+    }
+    .services{
+        margin: 0;
+    }
+
+}
